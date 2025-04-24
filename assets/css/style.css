@@ -33,7 +33,7 @@
 body {
     min-height: 100vh;
     background: url('../images/bg.png') no-repeat center center;
-    background-size: cover;
+    background-size: 100vw 100vh;
     color: black;
     position: relative;
 }
@@ -48,11 +48,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* padding: 0 8%; */
+    padding: 0;
 }
 
 .main-content {
-    padding-top: 34vh;
+    padding-top: 32.5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,15 +67,15 @@ body {
 }
 
 .logo-img {
-    max-width: 420px;
+    max-width: 400px;
     width: 100%;
-    height: auto;
+    height: 14vh;
 }
 
 .tagline {
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     letter-spacing: 0.2em;
-    font-weight: 400;
+    font-weight: 300;
     margin-top: 8rem;
     transform: scaleY(1.2);
     transform-origin: center;
@@ -126,12 +126,15 @@ body {
 }
 
 @media (max-width: 768px) {
+    body {
+        background-size: cover;
+    }
     .content-wrapper {
         padding: 0 5%;
     }
 
     .main-content {
-        padding-top: 20vh;
+        padding-top: 36.5vh;
     }
 
     .branding {
@@ -140,12 +143,22 @@ body {
 
     .logo-img {
         max-width: 300px;
+        height: 8vh;
+        width: 26vh;
     }
 
     .tagline {
-        font-size: 1rem;
-        margin-top: 10rem;
-        transform: scaleY(1.2);
+        font-size: 0.8rem;
+        margin-top: 0;
+        font-weight: 500;
+    }
+
+    .coming-soon{
+        font-size: 1.4rem;
+    }
+
+    .footer{
+        padding-bottom: 4.75rem;
     }
 
     .footer-content {
@@ -156,5 +169,11 @@ body {
 
     .contact {
         text-align: center;
+    }
+    .contact .email{
+        font-size: 1rem;
+    }
+    .copyright{
+        font-size: 0.75rem!important;
     }
 } 
