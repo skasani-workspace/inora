@@ -127,10 +127,13 @@ body {
 
 @media (max-width: 768px) {
     body {
-        background-size: cover;
+        background: url('../images/bg_mobile.jpg') no-repeat center center;
+        background-size: contain;
+        background-color: #ebebe2; /* Beige color */
     }
     .content-wrapper {
         padding: 0 5%;
+        display: none
     }
 
     .main-content {
