@@ -130,6 +130,7 @@ body {
         background: url('../images/bg_mobile.jpg') no-repeat center center;
         background-size: contain;
         background-color: #ebebe2; /* Beige color */
+        background-position-y: top;
     }
     .content-wrapper {
         padding: 0 5%;
