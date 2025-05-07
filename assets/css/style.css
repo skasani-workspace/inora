@@ -105,7 +105,6 @@ body {
 }
 
 .contact {
-    text-align: right;
     font-size: 0.85rem;
     font-weight: 300;
     flex: 1;
@@ -124,6 +123,27 @@ body {
     margin-bottom: 0;
     font-weight: 300;
 }
+
+@media (min-width: 1000px) {
+    .footer-content {
+        text-align: right !important;
+    }
+}
+
+@media (max-width: 991.98px) { /* Bootstrap lg breakpoint */
+    .footer-content {
+      flex-direction: column !important;
+      align-items: center;
+      text-align: center !important;
+    }
+    .footer .content {
+      display: flex;
+    }
+    .footer .content{
+        text-align: center !important;
+    }      
+  }
+  
 
 @media (max-width: 768px) {
     body {
