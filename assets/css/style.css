@@ -67,7 +67,6 @@ body {
 }
 
 .logo-img {
-    max-width: 400px;
     width: 100%;
     height: 14vh;
 }
@@ -127,6 +126,22 @@ body {
 @media (min-width: 1000px) {
     .footer-content {
         text-align: right !important;
+    }
+}
+
+@media (min-width: 2000px) {
+    .tagline {
+        font-size: 1.25vw;
+        margin-top: 8vw;
+    }
+    .coming-soon{
+        font-size: 1.25vw;
+    }
+    .contact .email{
+        font-size: 1.1vw!important;
+    }
+    .copyright{
+        font-size: 0.75vw !important;
     }
 }
 
